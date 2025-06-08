@@ -8,8 +8,8 @@ import mainImage from '../../assets/6.jpeg';
 import philosophyImage from '../../assets/0.png';
 
 // Section 2 Assets (Meet the Principal)
-import jayBritto from '../../assets/download.jfif';
-import backgroundImage from '../../assets/231.jpg';
+import jayBritto from '../../assets/231.jpg';
+import backgroundImage from '../../assets/banner-2.png';
 
 const AboutPage = () => {
   return (
