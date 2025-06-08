@@ -1,0 +1,469 @@
+/* General improvements */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden; /* Remove extra horizontal scroll */
+
+}
+.blog-page-wrapper {
+  width: 100vw;
+  min-height: calc(100vh - 300px); /* Adjust this based on your header + footer height */
+  padding: 2rem 0; /* Top and bottom padding only */
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+
+/* Blog Layout container */
+.blog-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+ 
+}
+
+/* Left Section (main content) */
+.left-section {
+  flex: 3;
+  max-width: 70%;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* Right Section (sidebar) */
+.right-section {
+  flex: 1;
+  max-width: 30%;
+  box-sizing: border-box;
+  padding-left: 1rem; /* Add some left padding for separation */
+}
+
+/* Headings */
+.custom-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 0.8rem;
+}
+
+/* Breadcrumb */
+.blog-breadcrumb {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.blog-breadcrumb a {
+  color: #007acc;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.blog-breadcrumb a:hover,
+.blog-breadcrumb a:focus,
+.blog-breadcrumb a:active {
+  text-decoration: none !important;
+  color: #005f99;
+}
+
+/* Introduction */
+.blog-introduction {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.blog-introduction h2 {
+  font-size: 1.8rem;
+  color: #004080;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Lists */
+.blog-introduction ul,
+.blog-introduction ol {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.blog-introduction ul li,
+.blog-introduction ol li {
+  margin-bottom: 0.8rem;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-image {
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+/* Blog Content */
+.blog-content p,
+.blog-content ul {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.blog-content h2 {
+  font-size: 1.4rem;
+  color: #004080;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Share Section */
+.share-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.share-buttons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: #e0f7fa;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #007acc;
+  transition: background 0.2s ease;
+}
+
+.share-buttons li a:hover {
+  background: #b2ebf2;
+}
+
+/* Like Button */
+.like-container {
+  margin-top: 2rem;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  color: #333;
+  transition: transform 0.1s ease;
+  outline: none;
+  box-shadow: none;
+}
+
+.like-button:hover {
+  transform: scale(1.05);
+}
+
+/* Post Navigation */
+.post-navigation {
+  margin-top: 2rem;
+}
+
+.post-navigation a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Comment Form */
+.comment-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  font-family: Arial, sans-serif;
+}
+
+.comment-form h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border 0.3s ease;
+}
+
+.comment-form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.3);
+}
+
+.comment-form button {
+  display: block;
+  width: 200px;
+  padding: 0.7rem 1.5rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-form button:hover {
+  background-color: #005f99;
+  transform: translateY(-1px);
+}
+
+/* Recent Posts */
+.recent-posts li {
+  margin-bottom: 0.8rem;
+}
+
+.recent-posts a {
+  color: #333;
+  text-decoration: none;
+}
+
+.recent-posts a:hover {
+  color: #007acc;
+}
+
+/* Sidebar headings and links */
+.right-section h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+.right-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.right-section li {
+  margin-bottom: 0.9rem;
+  font-size: 1.4rem;
+}
+
+.right-section a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.right-section a:hover {
+  color: #007BFF;
+}
+
+/* Divider style */
+.divider {
+  width: 2px;
+  background-color: #ccc;
+  margin: 2rem 0;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Related Posts */
+.related-posts {
+  padding: 1rem;
+}
+
+.related-posts h3 {
+  margin-bottom: 1rem;
+}
+
+/* Container to hold 3 cards horizontally */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 50px 0;
+  box-sizing: border-box;
+}
+
+/* Individual card styling */
+.post-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styles */
+.post-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Post title */
+.post-card a {
+  margin: 0.75rem 1rem 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #007acc;
+  text-decoration: none;
+}
+
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+/* Date and category */
+.post-card small {
+  margin: 0 1rem 1rem;
+  color: #555;
+  font-size: 0.85rem;
+}
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+  .blog-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+  
+
+  .custom-heading {
+    font-size: 2rem;
+  }
+
+  .blog-introduction {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .right-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .right-section li {
+    font-size: 1.2rem;
+  }
+
+  .featured-image {
+    width: 100%;
+  }
+  .post-card img {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+  }
+
+   .posts-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px; /* spacing between cards */
+    padding: 0 10px;
+  }
+
+  .post-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .post-card img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
+
+  .post-card a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+
+  .post-card small {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #555;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+}

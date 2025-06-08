@@ -1,0 +1,261 @@
+.training-main-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFFAE9;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/* Welcome Section */
+.training-welcome-section {
+  background-color: #00565e; /* dark teal like screenshot */
+  color: #FFFAE9;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 100px;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 450px;
+  top:6rem;
+}
+
+.training-welcome-text h1 {
+ 
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.training-welcome-text p {
+  font-size: 18px;
+  max-width: 520px;
+  line-height: 1.7;
+  color: #b2e0e5; /* muted cyan tone */
+  text-align: justify;
+}
+
+.training-welcome-image {
+  position: relative;
+  z-index: 3; /* On top of slants */
+  margin-top: 30px;
+  right: -250px;
+}
+
+.training-curved-frame {
+  width: 550px;
+  height: 331px;
+  background-color: #00bcd4;
+  border-radius: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Keeps image inside curve */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.training-main-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  transform: translateX(-110px); 
+  object-fit: cover;
+  
+}
+
+
+
+/* Layered bottom slant */
+.training-welcome-section::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 130px;
+  background: #00565e; /* darker shade */
+  transform: skewY(-6deg);
+  z-index: 2; /* Now in front */
+}
+
+.training-welcome-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: 50px;
+  width: 100%;
+  height: 80px;
+  background: #00bcd4; /* cyan overlay */
+  transform: skewY(-6deg);
+  z-index: 1; /* Now behind */
+}
+.training-main-section {
+  margin-top: 350px; /* or padding-top: 100px; */
+}
+.training-workshop-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFAE9;
+  width: 100vw;
+  height: 80vh;
+  padding: 0;
+  align-items: center; /* ✅ vertically center text */
+  gap: 20px; /* optional spacing between image and text */
+}
+
+/* Reverse layout: image right, text left */
+.training-workshop-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.training-image-section{
+  flex: 1; /* or a specific width like 50% */
+  padding: 0;
+  margin: 0;
+ 
+}
+
+/* For image inside left image-section */
+.training-image-section.left img {
+   width: 500px; /* 👈 Reduce this size as needed */
+  height: auto;
+  object-fit: cover;
+
+  /* Keep the image at the right edge */
+  float: left;
+  border-bottom-right-radius: 150px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* For image inside right image-section */
+.training-image-section.right img {
+   width: 500px; /* 👈 Reduce this size as needed */
+  height: auto;
+  object-fit: cover;
+
+  /* Keep the image at the right edge */
+  float: right;
+
+  border-top-left-radius: 150px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0 ;
+ 
+  
+}
+/* Text section */
+.training-text-section {
+  flex: 1;
+  padding: 30px;
+  color: #000;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 160px;
+  
+}
+.training-workshop-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* spacing between cards */
+  padding: 0 ;
+}
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .training-welcome-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+    top: 5rem;
+    text-align: center;
+  }
+
+  .training-welcome-text h1 {
+    font-size: 36px;
+  }
+
+  .training-welcome-text p {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .training-welcome-image {
+    right: 0;
+    margin-top: 20px;
+  }
+
+  .training-curved-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+  }
+
+  .training-main-image {
+    width: 200px;
+    height: 200px;
+    transform: translateX(0);
+  }
+
+  .training-main-section {
+    margin-top: 200px;
+  }
+
+  .training-workshop-card {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .training-workshop-card.reverse {
+    flex-direction: column;
+  }
+
+  .training-image-section {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .training-image-section img {
+    width: 90%;
+    height: auto;
+    float: none;
+    border-radius: 20px !important; /* Remove special corner radius on mobile */
+  }
+
+  .training-text-section {
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .training-workshop-wrapper {
+    gap: 20px;
+    padding: 10px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .training-welcome-text h1 {
+    font-size: 28px;
+  }
+
+  .training-welcome-text p {
+    font-size: 14px;
+  }
+
+  .training-main-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .training-text-section {
+    font-size: 16px;
+    padding: 15px;
+  }
+}

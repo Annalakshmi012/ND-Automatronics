@@ -1,0 +1,501 @@
+.unique-career-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffbe9;
+  padding: 50px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.unique-career-text {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  word-wrap: break-word;
+  flex: 1;
+  padding-left: 40px;
+}
+
+.unique-career-text h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #00c0e4;
+}
+
+.unique-career-text p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.unique-highlight {
+  color: #00c0e4;
+}
+
+.unique-view-btn {
+  background-color: #00c0e4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.unique-view-btn:hover {
+  background-color: #009bb5;
+  transform: translateY(-2px); /* Optional: adds a slight lift on hover */
+}
+
+.unique-view-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.unique-career-image img {
+  max-width: 3800px;
+  margin-top: -20px;
+  width: 700px;
+}
+
+.unique-career-cardscontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+}
+
+.unique-career-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  column-gap: 40px; /* Horizontal gap */
+  row-gap: 20px; /* Fixed vertical gap between rows */
+  flex: 1;
+  min-width: 300px;
+  padding: 50px;
+}
+
+.unique-card {
+  background-color: #e6ecf2;
+  padding: 25px;
+ 
+  border-radius: 10px;
+  align-items: center;
+  text-align: justify;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  max-width: 200px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+/* Apply stagger effect (vertical offset) only to cards in the second column */
+.unique-career-cards > .unique-card:nth-child(2n) {
+  transform: translateY(80px); /* Apply a slight downward shift to only the second column */
+}
+
+/* Alternatively, you can use margin-top for more specific control */
+.unique-career-cards > .unique-card:nth-child(2n) {
+  margin-top: 20px; /* Apply a small margin to stagger only the second column */
+}
+
+.unique-card img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.unique-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.unique-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.unique-career-cardscontainer {
+  display: flex;
+  align-items: center;         /* Vertically center content */
+  justify-content: center;     /* Horizontally center content */
+  flex-wrap: wrap;
+  padding: 40px;
+  text-align: center;          /* Center text inside the container */
+    /* Optional: adds soft background */
+}
+
+.unique-career-cardstext {
+  flex: 1;
+  min-width: 300px;
+  max-width: 800px;            /* Prevent text from stretching too wide */
+  padding: 20px;
+  margin: auto;
+}
+
+.unique-career-cardstext h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2C3E50;
+  line-height: 1.2;
+}
+
+.unique-highlight {
+  color: #00c0e4;
+}
+
+.unique-career-cardstext p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: justify;         /* Optional: for a more polished layout */
+}
+
+.unique-views-btn {
+  background-color: #00c0e4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+}
+
+.unique-views-btn:hover {
+  background-color: #009bb5;
+  transform: translateY(-2px);
+}
+
+
+
+
+.unique-views-btn:focus,
+.unique-views-btn:active,
+.unique-views-btn:visited {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .unique-career-cardstext h1 {
+    font-size: 28px;
+  }
+
+  .unique-career-cardstext p {
+    font-size: 15px;
+  }
+
+  .unique-views-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+.unique-role-section {
+  background-color: #FDF4DC;
+  padding: 3rem 6rem;
+}
+
+.unique-role-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2C3E50;
+  margin-bottom: 2rem;
+}
+
+.unique-role-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.unique-role-card {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+ 
+}
+
+.unique-role-card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.unique-role-card p {
+  color: #4b5563;
+  max-width: 700px;
+  text-align: justify;
+}
+
+.unique-role-button {
+  background-color: #06b6d4;
+  color: white;
+  font-weight: 200;
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Increased from 20px for better visibility */
+}
+
+.unique-role-button:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.unique-role-button:hover {
+  background-color: #0891b2;
+}
+.hiring-container {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 450px; /* Add this line or adjust value as needed */
+}
+
+
+.hiring-container h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #333;
+}
+
+.highlight {
+  color: #00cffe;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+
+
+.step-number {
+  position: absolute;
+  top: -90px; /* Moves number slightly above card */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  font-weight: bold;
+  color:  #00cffe; /* translucent */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.step-card {
+  position: relative;
+  background-color: #ecf0f3;
+  border-radius: 12px;
+  width: 180px;
+  height: 180px; /* Fixed height for uniformity */
+  padding: 40px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  overflow: visible;
+  top: 50px;
+
+  /* Center content vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title {
+  position: relative;
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 600;
+  color: #111;
+  text-align: center;
+}
+
+/* Responsive Design for Unique Career Section and Steps */
+@media (max-width: 768px) {
+  .unique-career-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .unique-career-text {
+    padding-left: 0;
+    padding: 10px;
+  }
+
+  .unique-career-text h1 {
+    font-size: 40px;
+  }
+
+  .unique-career-text p {
+    font-size: 18px;
+  }
+
+  .unique-career-image img {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+
+  .unique-career-cards {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    column-gap: 0;
+    row-gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .unique-card {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Remove stagger effect on mobile */
+  .unique-career-cards > .unique-card:nth-child(2n) {
+    transform: none;
+    margin-top: 0;
+  }
+
+  .unique-career-cardstext h1 {
+    font-size: 28px;
+  }
+
+  .unique-career-cardstext p {
+    font-size: 14px;
+  }
+
+  .unique-views-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Unique Role Section */
+  .unique-role-section {
+    padding: 2rem;
+  }
+
+  .unique-role-heading {
+    font-size: 32px;
+  }
+
+  .unique-role-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .unique-role-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .unique-role-card h2 {
+    font-size: 20px;
+  }
+
+  .unique-role-card p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .unique-role-button {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+  }
+
+  /* Hiring Section */
+  .hiring-container h1 {
+    font-size: 28px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .step-card {
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    top: 0;
+  }
+
+  .step-number {
+    top: -40px;
+    font-size: 60px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .unique-career-text h1 {
+    font-size: 32px;
+  }
+
+  .unique-career-text p {
+    font-size: 16px;
+  }
+
+  .unique-role-heading {
+    font-size: 26px;
+  }
+
+  .hiring-container h1 {
+    font-size: 24px;
+  }
+
+  .step-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .step-number {
+    font-size: 50px;
+    top: -40px;
+  }
+}

@@ -1,0 +1,566 @@
+.printing-service {
+    background-color: #fffae9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .printing-service .div-2 {
+    background-color: #fffae9;
+    height: 4343px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .printing-service .overlap-5 {
+    height: 391px;
+    left: 670px;
+    position: absolute;
+    top: 227px;
+    width: 685px;
+  }
+  
+  .printing-service .link-2 {
+    border: 1px solid;
+    border-color: #00e2ff;
+    border-radius: 10px;
+    height: 65px;
+    left: 207px;
+    position: absolute;
+    top: 326px;
+    width: 171px;
+  }
+  
+  .printing-service .text-2 {
+    color: #ffffff;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 28px;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 55px;
+    white-space: nowrap;
+  }
+  
+  .printing-service .link-3 {
+    background-color: #00bcd4;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 65px;
+    left: 1px;
+    position: absolute;
+    top: 326px;
+    width: 171px;
+  }
+  
+  .printing-service .text-wrapper-28 {
+    color: #ffffff;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 39px;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 12px;
+    width: 105px;
+  }
+  
+  .printing-service .arrow {
+    height: 15px;
+    left: 324px;
+    position: absolute;
+    top: 352px;
+    width: 26px;
+  }
+  
+  .printing-service .text-wrapper-29 {
+    color: #00bcd4;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    height: 28px;
+    left: 236px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 344px;
+    white-space: nowrap;
+  }
+  
+  .printing-service .overlap-6 {
+    height: 1794px;
+    left: 84px;
+    position: absolute;
+    top: 903px;
+    width: 1472px;
+  }
+  
+  .printing-service .rectangle-4 {
+    height: 737px;
+    left: 0;
+    position: absolute;
+    top: 1057px;
+    width: 1294px;
+  }
+  
+  .printing-service .our-printing {
+    color: transparent;
+    font-family: "Oxanium-SemiBold", Helvetica;
+    font-size: 64px;
+    font-weight: 600;
+    left: 195px;
+    letter-spacing: 0;
+    line-height: 49.3px;
+    position: absolute;
+    top: 0;
+    width: 885px;
+  }
+  
+  .printing-service .text-wrapper-30 {
+    color: #2c3e50;
+  }
+  
+  .printing-service .text-wrapper-31 {
+    color: #000000;
+  }
+  
+  .printing-service .text-wrapper-32 {
+    color: #00bcd4;
+  }
+  
+  .printing-service .frame-4 {
+    background-image: url(./frame-14-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 833px;
+    left: 39px;
+    position: absolute;
+    top: 868px;
+    width: 557px;
+  }
+  
+  .printing-service .link-4 {
+    background-color: #00bcd4;
+    border: 1px solid;
+    height: 66px;
+    left: 208px;
+    position: absolute;
+    top: 1695px;
+    width: 171px;
+  }
+  
+  .printing-service .container {
+    height: 180px;
+    left: 466px;
+    position: absolute;
+    top: 1367px;
+    width: 1006px;
+  }
+  
+  .printing-service .green-curve-shape {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 1160px;
+    max-width: 1920px;
+    position: relative;
+    top: -37px;
+    transform: rotate(-124.60deg);
+    width: 150px;
+  }
+  
+  .printing-service .green-curve-shape-2 {
+    height: 108px;
+    position: relative;
+    width: 150px;
+  }
+  
+  .printing-service .best-for-jewelry {
+    color: transparent;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 718px;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    top: 1390px;
+    width: 547px;
+  }
+  
+  .printing-service .text-wrapper-33 {
+    color: #25786e;
+  }
+  
+  .printing-service .materials-standard {
+    color: transparent;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 718px;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    top: 1513px;
+    width: 576px;
+  }
+  
+  .printing-service .advantages-superior {
+    color: transparent;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 718px;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    top: 1637px;
+    width: 622px;
+  }
+  
+  .printing-service .frame-5 {
+    background-image: url(./frame-15-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 70px;
+    left: 623px;
+    position: absolute;
+    top: 1376px;
+    width: 79px;
+  }
+  
+  .printing-service .frame-6 {
+    background-image: url(./frame-16-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 70px;
+    left: 623px;
+    position: absolute;
+    top: 1499px;
+    width: 79px;
+  }
+  
+  .printing-service .frame-7 {
+    background-image: url(./frame-17-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 70px;
+    left: 623px;
+    position: absolute;
+    top: 1623px;
+    width: 79px;
+  }
+  
+  .printing-service .text-wrapper-34 {
+    color: #000000;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 623px;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    top: 1230px;
+    width: 680px;
+  }
+  
+  .printing-service .ND-automatroncis-wrapper {
+    background-image: url(./ND-automatroncis-logo-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 72px;
+    left: 71px;
+    position: absolute;
+    top: 32px;
+    width: 149px;
+  }
+  
+  .printing-service .ND-automatroncis-2 {
+    height: 72px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 149px;
+  }
+  
+  .printing-service .overlap-7 {
+    height: 40px;
+    left: -121px;
+    position: absolute;
+    top: 3058px;
+    width: 195px;
+  }
+  
+  .printing-service .text-wrapper-35 {
+    color: #000000;
+    font-family: "Jersey 10-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    height: 40px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    width: 195px;
+  }
+  
+  .printing-service .tabler-star-filled {
+    height: 24px;
+    left: -23214px;
+    position: absolute;
+    top: 45px;
+    width: 24px;
+  }
+  
+  .printing-service .tabler-star-filled-wrapper {
+    background-image: url(./tabler-star-filled.svg);
+    background-size: 100% 100%;
+    height: 24px;
+    left: -23186px;
+    position: absolute;
+    top: 45px;
+    width: 24px;
+  }
+  
+  .printing-service .tabler-star-filled-2 {
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 24px;
+  }
+  
+  .printing-service .img-wrapper {
+    background-image: url(./tabler-star-filled-2.svg);
+    background-size: 100% 100%;
+    height: 24px;
+    left: -23158px;
+    position: absolute;
+    top: 45px;
+    width: 24px;
+  }
+  
+  .printing-service .overlap-8 {
+    background-image: url(./tabler-star-filled-4.svg);
+    background-size: 100% 100%;
+    height: 24px;
+    left: -23130px;
+    position: absolute;
+    top: 45px;
+    width: 24px;
+  }
+  
+  .printing-service .tabler-star-filled-3 {
+    height: 24px;
+    left: -21500px;
+    position: absolute;
+    top: 258px;
+    width: 24px;
+  }
+  
+  .printing-service .tabler-star-filled-4 {
+    height: 24px;
+    left: -21472px;
+    position: absolute;
+    top: 258px;
+    width: 24px;
+  }
+  
+  .printing-service .overlap-9 {
+    height: 569px;
+    left: 123px;
+    position: absolute;
+    top: 2787px;
+    width: 1134px;
+  }
+  
+  .printing-service .group-10 {
+    background-image: url(./frame-18.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 165px;
+    left: 74px;
+    position: absolute;
+    top: 292px;
+    width: 152px;
+  }
+  
+  .printing-service .group-11 {
+    height: 260px;
+    left: 456px;
+    position: absolute;
+    top: 309px;
+    width: 255px;
+  }
+  
+  .printing-service .group-12 {
+    background-image: url(./frame-18-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 165px;
+    left: 38px;
+    position: absolute;
+    top: 0;
+    width: 167px;
+  }
+  
+  .printing-service .text-wrapper-36 {
+    color: #000000;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    height: 60px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+  }
+  
+  .printing-service .text-wrapper-37 {
+    color: #000000;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    left: 1166px;
+    letter-spacing: 0;
+    line-height: 24.6px;
+    position: absolute;
+    top: 61px;
+    white-space: nowrap;
+    width: 159px;
+  }
+  
+  .printing-service .rectangle-5 {
+    background-color: #00bcd4;
+    height: 14px;
+    left: 1163px;
+    position: absolute;
+    top: 40px;
+    width: 167px;
+  }
+  
+  .printing-service .rectangle-6 {
+    background-color: #00bcd4;
+    height: 14px;
+    left: 1163px;
+    position: absolute;
+    top: 93px;
+    width: 167px;
+  }
+  
+  .printing-service .rectangle-wrapper {
+    background-color: #00bcd4;
+    height: 40px;
+    left: 1151px;
+    position: absolute;
+    top: 53px;
+    width: 12px;
+  }
+  
+  .printing-service .rectangle-7 {
+    background-color: #00bcd4;
+    height: 40px;
+  }
+  
+  .printing-service .overlap-10 {
+    background-color: #00bcd4;
+    height: 40px;
+    left: 1330px;
+    position: absolute;
+    top: 53px;
+    width: 12px;
+  }
+  
+  .printing-service .group-13 {
+    height: 260px;
+    left: 322px;
+    position: absolute;
+    top: 3425px;
+    width: 259px;
+  }
+  
+  .printing-service .group-14 {
+    background-image: url(./frame-18-3.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 165px;
+    left: 40px;
+    position: absolute;
+    top: 0;
+    width: 167px;
+  }
+  
+  .printing-service .group-15 {
+    height: 255px;
+    left: 861px;
+    position: absolute;
+    top: 3413px;
+    width: 236px;
+  }
+  
+  .printing-service .group-16 {
+    background-image: url(./frame-18-5.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 176px;
+    left: 27px;
+    position: absolute;
+    top: 0;
+    width: 179px;
+  }
+  
+  .printing-service .shipping-across {
+    color: #000000;
+    font-family: "Oxanium-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    height: 60px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 29.8px;
+    position: absolute;
+    text-align: center;
+    top: 195px;
+  }
+  
+  .printing-service .overlap-11 {
+    height: 560px;
+    left: 85px;
+    position: absolute;
+    top: 168px;
+    width: 509px;
+  }
+  
+  .printing-service .frame-8 {
+    height: 296px;
+    left: 61px;
+    position: absolute;
+    top: 132px;
+    width: 383px;
+  }
+  
+  .printing-service .frame-9 {
+    height: 560px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 509px;
+  }
+  
+  .printing-service .component-15 {
+    left: 322px !important;
+    position: absolute !important;
+    top: 65px !important;
+  }
+  

@@ -1,0 +1,328 @@
+/* ✅ General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ✅ Bigger Navbar */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 16px 0;
+  background-color: #FFFAE9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+
+/* ✅ Bigger Desktop Menu */
+.nav-links {
+  display: flex;
+  gap: 24px; /* Increased gap */
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* ✅ Bigger Navigation Links */
+.nav-link,
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px; /* Increased font size */
+  font-weight: 600;
+  padding: 12px 18px; /* Increased padding */
+  position: relative;
+  transition: color 0.3s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Keep Text Color Same on Hover */
+.nav-link:hover,
+.dropdown-menu li a:hover {
+  color: inherit !important; /* Keeps original color */
+}
+
+/* ✅ Thicker Underline Hover Effect */
+.nav-link::after,
+.dropdown-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px; /* Thicker underline */
+  background: linear-gradient(90deg, rgba(0, 188, 212, 0.2), rgba(0, 188, 212, 1), rgba(0, 188, 212, 0.2));
+  box-shadow: 0 0 4px rgba(0, 188, 212, 0.3);
+  
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+/* ✅ Expanded Hover Effect */
+.nav-link:hover::after,
+.dropdown-menu li a:hover::after {
+  width: 60%;
+  opacity: 1;
+}
+
+/* ❌ Remove underline effect from "Services" */
+.nav-item.dropdown > .nav-link::after {
+  display: none;
+}
+
+/* ✅ Bigger Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 247, 212, 0.98); /* Light beige */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  width: 220px; /* Increased width */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  border-radius: 10px;
+  padding: 12px 0;
+  backdrop-filter: blur(5px);
+  list-style: none; /* ✅ Removes bullet points */
+}
+
+/* ✅ Show Dropdown on Hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(8px);
+}
+
+/* ✅ Bigger Dropdown Links */
+.dropdown-menu li {
+  list-style: none; /* ✅ Ensures no bullets */
+  padding: 0;
+}
+
+/* ✅ Bigger Dropdown Hover Effect */
+.dropdown-menu li a {
+  display: block;
+  padding: 14px 18px; /* Increased padding */
+  text-decoration: none;
+  color: #000;
+  font-size: 16px; /* Increased font size */
+  text-align: center;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* ✅ Classy Dropdown Hover */
+.dropdown-menu li a:hover {
+  color: #8A6F4D;
+  transform: scale(1.08);
+}
+
+/* ✅ Bigger Dropdown Icon */
+.dropdown-icon {
+  margin-left: 6px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when dropdown is open */
+.nav-item.dropdown:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* ✅ Bigger Button */
+.contact-button {
+  font-size: 30px;
+  color: #000000;
+  background-color: #fef6e4;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.contact-button {
+  color: inherit;            /* keep original color */
+  text-decoration: none;     /* remove underline */
+  outline: none;             /* remove focus outline */
+}
+
+.contact-button:visited {
+  color: inherit;            /* prevent color change on visited */
+}
+
+.contact-button:focus,
+.contact-button:active {
+  color: inherit;            /* prevent color change on focus and active */
+  outline: none;             /* remove outline on focus */
+}
+
+
+/* Perfect-fit border lines */
+.contact-button .border-line {
+  position: absolute;
+  background-color: #00BCD4;
+}
+
+/* Top and bottom lines */
+.contact-button .top,
+.contact-button .bottom {
+  height: 10px;
+  width: 100%;
+  left: 0;
+}
+
+.contact-button .top {
+  top: 0;
+}
+
+.contact-button .bottom {
+  bottom: 0;
+}
+
+/* Left and right lines */
+.contact-button .left,
+.contact-button .right {
+  width: 10px;
+  height: 40px; /* or any small height you want */
+  top: 50%;
+  transform: translateY(-50%); /* centers the line vertically */
+  position: absolute;
+  background-color: #00BCD4;
+}
+
+.contact-button .left {
+  left: -10px; /* outside the button */
+}
+
+.contact-button .right {
+  right: -10px; /* outside the button */
+}
+
+
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  position: absolute;
+  right: 20px; /* ✅ Push it to the right side */
+  top: 24px;   /* ✅ Adjust based on your navbar height */
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 40%;
+  height: 100%;
+  background-color: #FFF6E9;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 20px;
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #B98E65;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links,
+  .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between; /* Ensures logo-left & hamburger-right */
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: flex-start !important;
+    flex: 1; /* Take up space on the left */
+  }
+
+  .logo-img {
+    margin-left: 20 !important;
+  }
+
+  .hamburger {
+    margin-left: auto;
+    
+  }
+}
+/* Desktop only */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none; /* Hide contact button in header */
+  }
+
+  .mobile-only {
+    display: block; /* Show contact in sidebar */
+  }
+}

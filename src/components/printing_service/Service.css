@@ -1,0 +1,469 @@
+.ser {
+  padding: 10px;
+  background-color: #f8f8f8;
+  margin-top:2rem;
+}
+
+.service-heading{
+  text-align: center;
+  font-size: 3rem;
+  padding: 30px;
+
+}
+.service-heading h2 {
+  font-size: 3rem;
+}
+
+
+.service-highlight {
+  color:#00BCD4;
+}
+  
+.service-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color:#FFFAE9; 
+  padding-right: 60px;
+  margin-top:60px;
+}
+
+.service-hero-section h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.service-hero-section .service-highlight {
+  color:#00BCD4;
+}
+
+.service-hero-section .service-brand {
+  font-weight: bold;
+  color: #333;
+}
+
+.service-hero-section p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 20px;
+  max-width: 500px; /* Limits paragraph width for better readability */
+}
+
+.service-button-group {
+  margin-top: 20px;
+}
+
+.service-primary-btn,
+.service-outline-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.service-primary-btn {
+  background-color: #00BCD4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.service-outline-btn {
+  background-color: transparent;
+  color: #00BCD4;
+  border: 2px solid #00BCD4;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+.service-primary-btn:hover {
+  background-color: #0097a7;
+}
+
+.service-outline-btn:hover {
+  background-color: #00BCD4;
+  color: white;
+}
+
+
+
+.service-hero-image {
+    width: 40%;       /* or whatever width you want */
+  height: 400px;    /* fixed height */
+  /* optional: position relative */
+  position: relative;
+  margin-top:4rem;
+  
+}
+
+
+.service-tech-section {
+  background-color: #ecf0f3;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin: 100px ; /* Add vertical spacing between sections */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.service-tech-content {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-tech-content.reverse {
+  flex-direction: row-reverse; /* This ensures the image is on the left side */
+  
+
+}
+
+.service-tech-image {
+  width: 40%;
+}
+
+.service-tech-image {
+  width: 40%;
+  margin-top: -200px; /* Also moves image upward */
+}
+
+.service-tech-text {
+  width: 55%;
+  padding-left: 20px;
+}
+
+.service-tech-text h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-tech-text .service-highlight {
+  color:#00BCD4;
+}
+
+.service-tech-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.service-tech-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-tech-text ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-check-icon {
+  color:#00BCD4;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.service-primary-btn {
+  padding: 12px 25px;
+  background-color: #00BCD4;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.service-primary-btn:hover {
+  background-color: #00BCD4;
+}
+
+.service-printing-section {
+  background-color: #ecf0f3;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin: 100px ; /* Add vertical spacing between sections */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  margin-top: 150px;
+}
+
+.service-printing-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.service-printing-image {
+  flex: 1;
+  margin-top: -200px;
+}
+
+.printing-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-printing-content {
+  flex: 1;
+}
+
+.service-printing-content h3 {
+  font-size: 1.8rem;
+}
+
+.service-printing-content .service-highlight {
+  color:#00BCD4;
+  font-weight: bold;
+}
+
+.service-printing-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-printing-content li {
+  margin: 10px 0;
+}
+
+.service-check-icon {
+  color: #00BCD4;
+  margin-right: 8px;
+}
+
+.service-primary-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00BCD4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.service-process-section {
+  padding: 80px 40px;
+  background-color: #FFFAE9;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.service-process-section h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.service-process-section .service-highlight {
+  color: #00BCD4;;
+}
+
+.service-process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 equal columns */
+  gap: 40px 30px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-step {
+  text-align: center;
+  
+}
+
+
+.service-step img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-step p {
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+  max-width: 160px;
+}
+/* ... Your existing CSS stays as is ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .service-hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: justify;
+  }
+  .service-hero-section h1{
+    text-align: center;
+  }
+  .service-hero-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .service-content {
+    margin-top: 20px;
+  }
+
+  .service-hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .service-hero-section p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .service-button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-button-group a {
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+  }
+
+  .service-tech-section,
+  .service-printing-section {
+    padding: 20px;
+    margin: 40px 20px;
+  }
+
+  .service-tech-content,
+  .service-printing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-tech-image,
+  .service-printing-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .service-tech-text,
+  .service-printing-content {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+
+      margin-bottom: 20px;
+  }
+
+  .service-tech-text h3,
+  .service-printing-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .service-process-section {
+    padding: 40px 20px;
+  }
+
+  .service-process-section h2 {
+    font-size: 2rem;
+  }
+
+  .service-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .service-step img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-step p {
+    font-size: 14px;
+  }
+
+  .service-heading h2 {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .service-process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-primary-btn,
+.service-outline-btn {
+  padding: 10px 16px;      /* smaller padding */
+  font-size: 1rem;         /* slightly smaller text */
+  border-radius: 6px;      /* consistent corner radius */
+  width: auto;             /* don't stretch too wide */
+  min-width: 140px;        /* ensures button is not too small */
+  text-align: center;      /* centers text inside */
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+
+ .service-button-group {
+  display: flex;
+  flex-direction: row;    /* horizontal layout */
+  justify-content: center; /* center buttons horizontally */
+  align-items: center;    /* align buttons vertically center */
+  gap: 10px;              /* space between buttons */
+  flex-wrap: nowrap;      /* no wrapping */
+}
+
+.service-primary-btn,
+.service-outline-btn {
+  min-width: 120px;       /* fixed minimum width */
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  margin: 0;              /* no vertical margin */
+  width: auto;            /* auto width to fit content */
+  flex: none;             /* do not stretch or shrink */
+}
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,438 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff9e6;
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1500px;
+    margin-top: 20px;
+  }
+  
+  
+  .hero-right {
+    width: 40%;
+    height: 400px;
+  }
+  .hero-left {
+    width: 60%;
+    text-align: left;
+    margin-top: 60px;
+  }
+  
+  .hero-left h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2C3E50;
+    top: 20px;
+  }
+  .highlight {
+    color:#00BCD4; /* Change this to your preferred color */
+}
+  
+  .hero-left p {
+    font-size: 1.7rem;
+    color: #555;
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #00BCD4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: #00BCD4;
+    border: 2px solid #00BCD4;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0097a7;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #00BCD4;
+    color: white;
+  }
+  .btn-primary,
+.btn-secondary {
+  color: black; /* Your desired color */
+  text-decoration: none;
+}
+
+/* Override visited link color */
+.btn-primary:visited,
+.btn-secondary:visited {
+  color: black;
+}
+
+/* Optional: remove focus/active outlines or colors */
+.btn-primary:focus,
+.btn-secondary:focus,
+.btn-primary:active,
+.btn-secondary:active {
+  color: black;
+  outline: none;
+  box-shadow: none;
+}
+
+  .service {
+    text-align: center; /* Centers everything */
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Light background */
+  }
+  .service h2 {
+    font-size: 3rem;
+    color: #2C3E50;
+    padding-left: 50px; /* Moves text inside the h2 */
+ 
+ 
+  }
+ 
+
+ .workshop-content{
+  display: flex;
+  align-items: center;  /* Center vertically */
+  justify-content: space-between; /* Space content properly */
+  padding: 80px;
+  height: 100vh;
+  margin-right:4rem;
+ }
+ .workshop-title{
+  margin-left:60px;
+  width:40%;
+  font-size: 5rem;
+  }
+ 
+  .faq-item {
+    border-bottom: 2px solid #00BCD4;
+    padding: 10px 0;
+  }
+  .faq-section {
+    flex: 1; /* Take available space */
+    max-width: 50%; /* Adjust width */
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none; /* Removes the border */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    outline: none; /* Removes focus outline */
+  }
+  
+  .faq-question:focus,
+  .faq-question:active {
+    outline: none;
+    border: none; /* Ensure no border on focus/active */
+    box-shadow: none; /* Removes any highlight effect */
+  }
+  
+  
+  .faq-question span {
+    margin-right: 10px;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+    color: #555;
+    text-align: left;
+  }
+  
+  .faq-answer ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  .faq-arrow {
+    font-size: 22px;  /* Make arrow bold and bigger */
+    font-weight: bold; /* Extra bold */
+    margin-left: 10px; /* Spacing from text */
+  }
+  .nd-container {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    background-color: #f8f8f8;
+    
+  }
+  .text-section {
+    width: 80%;
+    max-width: 50%;
+    text-align:left;
+    margin-left:100px;
+  }
+  
+  .heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    position: relative;
+  }
+ 
+  .description {
+    margin-top: 1rem;
+    color: gray;
+  }
+  .image-section {
+    position: relative;  /* Ensures absolute elements stay within this */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 20%;
+    margin-right:130px;
+   
+   
+}
+
+.image {
+    margin-left:350px; 
+    width: 350px;
+    height: 350px;
+    margin-bottom: -6px; 
+   
+}
+
+
+.image-rotated {
+  margin-bottom:-60px;
+  width: 250px;
+  position: absolute;
+  height: auto; 
+  bottom:0; 
+  margin-right:30px;
+  
+}
+.image-section .sprak{
+  margin-bottom:300px;
+  margin-right:500px;
+  position: absolute;
+  height:50px;
+  width:50px;
+}
+.image-section .arrow {
+  height: 100px;
+  width: 100px;
+  margin-top: -400px;
+  margin-right: -450px;
+  position: absolute;
+  transform: rotate(85deg) scaleY(-1); /* Adjust the angle as needed */
+}
+body {
+  overflow-x: hidden;
+}
+
+.testimonial-scroll-horizontal-wrapper {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 0; /* Adjusted padding to add space at top and bottom */
+  background-color: #fff9e6;
+}
+
+.testimonial-scroll-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  padding: 0 20px;
+}
+
+.testimonial-scroll-horizontal.bottom-row {
+  animation: scroll-right 30s linear infinite;
+}
+
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 300px;
+  max-width: 90vw;
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6rem;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left p {
+    font-size: 1.2rem;
+  }
+
+ .hero-buttons {
+  display: flex;
+  flex-direction: row; /* Buttons in one line */
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 10px; /* Space between buttons */
+  flex-wrap: wrap; /* Allows wrapping on very small screens */
+  margin-top: 20px;
+  margin-bottom:4rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  width: auto; /* Let them size naturally or use min-width if needed */
+  padding: 10px 16px;
+  font-size: 1rem;
+
+}
+
+
+  .workshop-content {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .workshop-title {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom:50px;
+  }
+
+  .faq-section {
+    max-width: 100%;
+    padding: 0 10px;
+   
+  }
+
+  .nd-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .text-section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .image-section {
+    width: 100%;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .image {
+    width: 200px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .image-rotated {
+    width: 150px;
+    bottom: -30px;
+    right: 20rem;
+    margin: 0;
+  }
+
+  .image-section .sprak {
+    margin: 0;
+    top: -32rem;
+    left: 30rem;
+  }
+
+  .image-section .arrow {
+    width: 60px;
+    margin: 0;
+    top: -3rem;
+    right: 14rem;
+    transform: rotate(85deg) scaleY(-1);
+  }
+
+  .testimonial-scroll-horizontal-wrapper {
+    padding: 40px 0;
+  }
+
+ 
+}

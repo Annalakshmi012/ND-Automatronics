@@ -1,0 +1,185 @@
+.printing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+  }
+  .container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: #E5E7EB !important;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: justify;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Keeps text at the top */
+    padding: 30px;
+    overflow: hidden;
+    
+  }
+  .text-content {
+    flex-grow: 1; /* Allow text to take up space */
+}
+.icon-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.middle-card .icon {
+ top:0;
+}
+  .highlight {
+    color: #00aaff;
+    font-weight: bold;
+  }
+  .middle-card .text-content {
+    flex-grow: 1; /* Allow the text to take up remaining space */
+    display: flex;
+    justify-content: flex-end; /* Push text to the bottom */
+    align-items: flex-start; /* Align text properly */
+    flex-direction: column; /* Stack text normally */
+  }
+   .card .circle{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #E5E7EB;
+    border-radius: 50%;
+    right: 0px; /* Move further right */
+    bottom: 0px; /* Move further down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card .circle::after {
+  content: "➜"; /* Unicode right arrow */
+  font-size: 30px;
+  color: #25786E; /* Arrow color */
+}
+.middle-card .circle {
+  top: 0px;
+  right: 0px;
+ 
+}
+.icon {
+  width: 70px; 
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px; /* Moves icon to the bottom */
+  left: 10px;
+}
+
+.middle-card .icon-img {
+  top: 10px;
+  right: 10px;
+  bottom: auto; /* Override bottom for middle card */
+}
+.card .icon-img {
+  width: 80px;  /* Adjust size */
+  height: 80px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 10px; /* Moves image to the bottom */
+  left: 10px;  /* Moves image to the right */
+}
+.card .box{
+
+position: absolute;
+width :100px;
+height :100px;
+background : #f8f8f8;
+right: -1px; 
+bottom: -1px;
+border-radius:10px;
+}
+.middle-card .box {
+  top: 0px;
+  bottom: auto; /* Override bottom positioning */
+}
+.card .curve::before{
+  content:"";
+  position : absolute;
+  width :30px;
+  height:30px;
+  background:#E5E7EB;
+  z-index:10;
+  right:99px;
+  bottom:0px;
+
+  border-bottom-right-radius: 20px;
+  box-shadow :8px  7px #f8f8f8;
+
+}
+.middle-card::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #E5E7EB;
+    z-index: 10;
+
+    /* Position at the top center */
+    top: 0px;
+    right:84px;
+    transform: translateX(-50%);
+
+    /* Apply top curve */
+   
+    border-top-right-radius: 20px;
+
+    /* Adjust shadow */
+    box-shadow: 8px -7px #f8f8f8;
+}
+.middle-card .curve::before{
+ display: none;
+}
+.card .curve-left::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #E5E7EB;
+  z-index: 10;
+  right: 0px; /* Move the curve to the left */
+  bottom:99px;
+
+  /* Left-side rounded corner */
+  border-bottom-right-radius: 20px;
+
+  /* Adjust shadow direction */
+  box-shadow: 8px 7px #f8f8f8;
+}
+.middle-card .curve-left::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #E5E7EB;
+  z-index: 10;
+  right: 0px; /* Move the curve to the left */
+  top: 100px;
+
+  /* Left-side rounded corner */
+  border-top-right-radius: 20px;
+
+  /* Adjust shadow direction */
+  box-shadow: 8px -7px #f8f8f8; 
+}
+
+
+

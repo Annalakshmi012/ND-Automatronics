@@ -1,0 +1,118 @@
+.nd-faq-container {
+    background-color: #fff9e8;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin-right:50px
+  }
+  
+  .nd-faq-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    margin-left:30px;
+  }
+  
+  .nd-faq-title .nd-highlight {
+    color: #00bcd4;
+  }
+  
+  .nd-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding:40px 80px;
+  }
+  
+  
+  .nd-faq-item {
+    background-color: #fff;
+    border: 1px solid #ccc;  /* ← remove this line */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  
+
+  
+  .nd-faq-toggle {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nd-faq-answer {
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+    color: #555;
+    animation: nd-fadeIn 0.3s ease;
+  }
+  
+  @keyframes nd-fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .nd-faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Add this to remove black outline on focus/click */
+  .nd-faq-question:focus,
+  .nd-faq-question:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  @media (max-width: 768px) {
+  .nd-faq-container {
+    padding: 10px 15px;
+    margin-right: 0;
+  }
+
+  .nd-faq-title {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .nd-faq-list {
+    padding: 0;
+    width: 100%;
+  }
+
+  .nd-faq-item {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .nd-faq-question {
+    flex-direction: row; /* Keep question and arrow on one line */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nd-faq-toggle {
+    font-size: 20px;
+  }
+
+  .nd-faq-answer {
+    font-size: 15px;
+    padding: 10px 15px 15px 15px;
+    box-sizing: border-box;
+  }
+}

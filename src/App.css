@@ -1,0 +1,18 @@
+/* Global Styles */
+body {
+    background-color: #FFFAE9; /* Apply background to the entire page */
+    font-family: sans-serif; /* Ensure all text uses sans-serif */
+    margin: 0;
+    padding: 0;
+  }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
