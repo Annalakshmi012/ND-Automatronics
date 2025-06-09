@@ -10,7 +10,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 
 const  BeginningNDA = () => {
@@ -26,6 +26,12 @@ const  BeginningNDA = () => {
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Beginning of ND Automatronics | ND Blog</title>
+  <meta name="description" content="The journey of ND Automatronics starting from AGNII.1 FDM printer to becoming a registered manufacturer." />
+  <link rel="canonical" href="https://nda3d.in/blog/Beginning-nda" />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">

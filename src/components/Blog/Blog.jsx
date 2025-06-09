@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Blog.css";
+import { Helmet } from 'react-helmet';
 import { FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa";
 import printingImage from "../../assets/26.jpg";
 import blog1 from '../../assets/29.jpg';
@@ -31,7 +32,7 @@ const blogPosts = [
     tag: '3d printing',
     description: 'Selecting the right technology can be crucial for achieving desired results...',
     image: blog2,
-    path: '/blog/3d-printing-comparison-fdm-vs-sls-vs-sl'
+    path: '/blog/3d-printing-comparison-fdm-vs-sls-vs-sla'
   },
   {
     title: 'Types of 3D Printing Resins: A Comprehensive Overview',
@@ -148,6 +149,26 @@ const Blog = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Blog | ND Automatronics - 3D Printing Insights & Updates</title>
+        <meta
+          name="description"
+          content="Explore the latest blog posts on 3D printing technology, workflows, materials, and innovations by ND Automatronics."
+        />
+        <meta name="keywords" content="3D printing, FDM, SLS, SLA, additive manufacturing, ND Automatronics, 3D printer brands, slicing software" />
+        <meta name="author" content="ND Automatronics" />
+
+        {/* Open Graph tags for social sharing */}
+        <meta property="og:title" content="Blog | ND Automatronics - 3D Printing Insights & Updates" />
+        <meta property="og:description" content="Explore the latest blog posts on 3D printing technology, workflows, materials, and innovations by ND Automatronics." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourblogpage.com" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:title" content="Blog | ND Automatronics - 3D Printing Insights & Updates" />
+        <meta name="twitter:description" content="Explore the latest blog posts on 3D printing technology, workflows, materials, and innovations by ND Automatronics." />
+      </Helmet>
+
       <div className="blog-header-section">
         <h1 onClick={() => (window.location.href = "/blog/3d-printing")} style={{ cursor: "pointer" }}>
           The Growing Market of 3D Printing <br /> in the World & India

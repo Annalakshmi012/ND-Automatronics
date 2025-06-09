@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Ndautomatronics.css";
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const posts = [
   {
     id: 0,
@@ -166,6 +166,9 @@ const posts = [
 const  Ndautomatronics = () => {
   return (
     <div className="main-container">
+       <Helmet>
+        <title>ND Automatronics - 3D Printing Services</title>
+      </Helmet>
       <h1 className="page-heading">ND Automatronics</h1>
       <p className="nda-description">
   Welcome to ND Automatronics, a 3D printing service! ND Automatronics has passionate and skilled professionals to provide high-quality 3D printing solutions for businesses and individuals alike. Our state-of-the-art technology and expertise allow us to transform your ideas and designs into tangible objects, bringing your visions to life.

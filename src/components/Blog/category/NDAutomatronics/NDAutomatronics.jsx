@@ -1,7 +1,7 @@
 import React from 'react';
 import "./NDAutomatronics.css";
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const posts = [
   {
     id: 0,
@@ -16,6 +16,9 @@ const posts = [
 const  NDAutomatronics = () => {
   return (
      <div className="blog-page-wrapper">
+        <Helmet>
+        <title>ND Automatronics - 3D Printing Innovation</title>
+      </Helmet>
     <div className="main-container">
       <h1 className="page-heading">ND Automatronics</h1>
       <div className="main-blog-layout">
