@@ -352,6 +352,7 @@
     flex-direction: column;
     padding: 20px;
     text-align: center;
+    margin-top: 5rem;
   }
 
   .unique-career-text {
@@ -365,6 +366,7 @@
 
   .unique-career-text p {
     font-size: 18px;
+    text-align: center;
   }
 
   .unique-career-image img {
@@ -474,6 +476,7 @@
 /* Extra small devices */
 @media (max-width: 480px) {
   .unique-career-text h1 {
+    
     font-size: 32px;
   }
 
