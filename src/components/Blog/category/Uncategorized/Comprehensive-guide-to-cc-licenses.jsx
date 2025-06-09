@@ -7,7 +7,7 @@ import blog3 from "../../../../assets/72.jpg";
 import blog4 from "../../../../assets/73.jpg";
 import blog5 from "../../../../assets/74.jpg";
 import blog6 from "../../../../assets/75.jpg";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/31.jpg";
 import related2 from "../../../../assets/76.webp";
 import related3 from "../../../../assets/77.webp";
@@ -36,6 +36,12 @@ const ComprehensiveLicenses = () => {
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Unlocking Creativity: A Comprehensive Guide to CC Licenses</title>
+  <meta name="description" content="Explore the different types of Creative Commons (CC) licenses, their benefits, and how to choose the right one for your creative works." />
+  <link rel="canonical" href="https://nda3d.in/blog/Comprehensive-guide-to-cc-licenses" />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">

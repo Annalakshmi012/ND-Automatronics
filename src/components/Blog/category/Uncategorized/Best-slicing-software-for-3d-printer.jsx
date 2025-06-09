@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogOne.css";
+import { Helmet } from 'react-helmet';
 import blog1 from "../../../../assets/39.jpg";
 import blog2 from "../../../../assets/40.jpg";
 import blog3 from "../../../../assets/41.jpg";
@@ -121,6 +122,16 @@ const BestBlog = () => {
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Top Slicing Software for 3D Printer: Ultimate Guide</title>
+  <meta
+    name="description"
+    content="Explore the best slicing software for 3D printers including Cura, Slic3r, Simplify3D, and more. Learn how slicing software works and choose the best fit for your needs."
+  />
+  <meta property="og:title" content="Top Slicing Software for 3D Printer" />
+  <meta property="og:url" content="https://nda3d.in/blog/best-slicing-software" />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">

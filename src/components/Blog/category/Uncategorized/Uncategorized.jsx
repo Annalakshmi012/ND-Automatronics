@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Uncategorized.css";
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const posts = [
  {
   id: 1,
@@ -40,6 +40,11 @@ const posts = [
 const  Uncategorized = () => {
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Uncategorized | 3D Printing Blog</title>
+  <meta name="description" content="Explore uncategorized articles on 3D printing, FDM printers, slicing software, and more." />
+</Helmet>
+
     <div className="main-container">
       <h1 className="page-heading">Uncategorized</h1>
       <div className="main-blog-layout">

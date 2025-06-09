@@ -1,5 +1,6 @@
 import React from "react";
 import "./BlogOne.css";
+import { Helmet } from 'react-helmet';
 import blog1 from "../../../../assets/52.jpg";
 import blog2 from "../../../../assets/53.jpg";
 import blog3 from "../../../../assets/54.jpg";
@@ -135,6 +136,10 @@ const FDMBrand = () => {
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Top 15 FDM 3D Printer Brands for Innovation and Quality</title>
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">

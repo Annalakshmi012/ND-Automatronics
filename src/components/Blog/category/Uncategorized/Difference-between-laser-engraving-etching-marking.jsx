@@ -3,7 +3,7 @@ import "./BlogOne.css";
 import blog1 from "../../../../assets/67.jpg";
 import blog2 from "../../../../assets/68.jpg";
 import blog3 from "../../../../assets/69.jpg";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/78.webp";
 import related2 from "../../../../assets/79.webp";
 import related3 from "../../../../assets/80.webp";
@@ -33,6 +33,12 @@ const  DifferenceLaser = () => {
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Difference Between Laser Engraving, Etching & Marking | ND Automatronics</title>
+  <meta name="description" content="Explore the differences between laser engraving, etching, and marking. Understand their applications, depth, materials, and benefits in manufacturing." />
+  <link rel="canonical" href="https://nda3d.in/blog/Difference-between-laser-engraving-etching-marking" />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">

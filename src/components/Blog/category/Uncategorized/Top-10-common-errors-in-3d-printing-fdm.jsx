@@ -11,7 +11,7 @@ import blog87 from "../../../../assets/87.webp";
 import blog88 from "../../../../assets/88.webp";
 import blog89 from "../../../../assets/89.webp";
 import blog90 from "../../../../assets/90.webp";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/30.jpg";
 import related2 from "../../../../assets/31.jpg";
 import related3 from "../../../../assets/32.jpg";
@@ -38,6 +38,12 @@ const blogTitle = encodeURIComponent("Top 10 Common Errors in 3D Printing (FDM) 
   };
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Top 10 Common Errors in 3D Printing (FDM) - ND Automatronics</title>
+  <meta name="description" content="Avoid failed 3D prints by learning the top 10 common FDM printing mistakes and how to fix them. Get better prints today!" />
+  <link rel="canonical" href="https://nda3d.in/blog/Top-10-common-errors-in-3d-printing-fdm" />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">
