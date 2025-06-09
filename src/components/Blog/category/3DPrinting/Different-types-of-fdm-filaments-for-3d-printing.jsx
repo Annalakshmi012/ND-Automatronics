@@ -16,7 +16,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const DifferentTypeFilaments = () => {
  const blogUrl = encodeURIComponent(
@@ -36,6 +36,10 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+       <Helmet>
+        <title>Different Types of FDM Filaments for 3D Printing</title>
+        <meta name="description" content="Explore various types of FDM filaments used in 3D printing, including PLA, ABS, PETG, and more." />
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
   <h1 className="custom-heading">Different Types of FDM Filaments for 3D Printing</h1>

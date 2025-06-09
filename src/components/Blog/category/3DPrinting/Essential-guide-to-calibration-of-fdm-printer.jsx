@@ -17,7 +17,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const EssentialGuideCalibration = () => {
  const blogUrl = encodeURIComponent(
@@ -37,6 +37,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>The Essential Guide to Calibration of FDM Printer</title>
+  <meta name="description" content="Learn how to calibrate your FDM 3D printer for perfect prints every time." />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
       <h1 className="custom-heading">The Essential Guide to Calibration of FDM Printer for Perfect Prints</h1>

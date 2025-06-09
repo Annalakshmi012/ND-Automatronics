@@ -1,7 +1,7 @@
 import React from 'react';
 import "./3DPrinting.css";
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const posts = [
   {
     id: 1,
@@ -129,6 +129,10 @@ const posts = [
 const  NDPrinter = () => {
   return (
      <div className="blog-page-wrapper">
+        <Helmet>
+        <title>3D Printing Blog - NDPrinter</title>
+        <meta name="description" content="Explore the latest blogs and guides on 3D Printing technology, market trends, and tutorials." />
+      </Helmet>
     <div className="main-container">
       <h1 className="page-heading">3D Printing</h1>
       <div className="main-blog-layout">

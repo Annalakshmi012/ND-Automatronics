@@ -10,7 +10,7 @@ import blog7 from "../../../../assets/110.webp";
 import blog8 from "../../../../assets/111.webp";
 import blog9 from "../../../../assets/112.webp";
 import blog10 from "../../../../assets/113.webp";
-
+import { Helmet } from 'react-helmet';
 
 import related1 from "../../../../assets/77.webp";
 import related2 from "../../../../assets/80.webp";
@@ -42,6 +42,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>3D Printing Technology Comparison: FDM vs SLS vs SLA | NDA3D</title>
+  <meta name="description" content="Detailed comparison of 3D printing technologies - FDM, SLS, and SLA with pros, cons, and use cases." />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
          <h1 className="custom-heading">

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../BlogPost.css";
+import { Helmet } from 'react-helmet';
 import blog1 from "../../../../assets/223.webp";
 import blog2 from "../../../../assets/224.webp";
 import blog3 from "../../../../assets/225.webp";
@@ -38,6 +39,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Applications of 3D Printing - ND Automatronics</title>
+  <meta name="description" content="Explore real-world applications of 3D printing in various industries including healthcare, aerospace, education, and more." />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">

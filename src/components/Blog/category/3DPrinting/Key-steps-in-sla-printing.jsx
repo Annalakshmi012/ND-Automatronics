@@ -8,7 +8,7 @@ import blog5 from "../../../../assets/147.webp";
 import blog6 from "../../../../assets/148.webp";
 import blog7 from "../../../../assets/149.webp";
 import blog8 from "../../../../assets/150.webp";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/77.webp";
 import related2 from "../../../../assets/91.webp";
 import related3 from "../../../../assets/79.webp";
@@ -39,6 +39,12 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Key Steps in SLA Printing: A Quick Guide | NDA 3D</title>
+  <meta name="description" content="Learn the essential steps in SLA 3D printing from design to post-processing with this quick guide." />
+  <link rel="canonical" href="https://nda3d.in/blog/Key-steps-in-sla-printing" />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">Key Steps in SLA Printing: A Quick Guide</h1>

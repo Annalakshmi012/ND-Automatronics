@@ -5,7 +5,7 @@ import related2 from "../../../../assets/31.jpg";
 import related3 from "../../../../assets/32.jpg";
 import { Link } from 'react-router-dom';
 import  { useState } from "react";
-
+import { Helmet } from 'react-helmet';
 import { 
   FaHeart, FaRegHeart, 
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
@@ -29,6 +29,11 @@ const  ThreeDPrinting = () => {
   };
   return (
       <div className="blog-page-wrapper">
+        <Helmet>
+  <title>The Growing Market of 3D Printing in the World & India</title>
+  <meta name="description" content="Learn about 3D Printing technologies, applications, and market trends in the world and India." />
+</Helmet>
+
     <div className="blog-layout">
       {/* Left Section */}
       <div className="left-section">
