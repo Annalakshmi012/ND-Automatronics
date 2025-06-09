@@ -1,7 +1,7 @@
 import React from "react";
 import "./Archives.css";
 import { Link } from "react-router-dom";
-
+import { Helmet } from 'react-helmet';
 const posts = [
   {
     id: 1,
@@ -43,6 +43,10 @@ const posts = [
 const BlogPost = () => {
   return (
      <div className="blog-page-wrapper">
+       <Helmet>
+        <title>October 2024 Archives | 3D Printing Insights</title>
+        <meta name="description" content="Explore expert insights and guides on 3D printing technologies, laser marking, and licensing from October 2024." />
+      </Helmet>
     <div className="main-container">
       <h1 className="page-heading">October 2024</h1>
       <div className="blog-layout">

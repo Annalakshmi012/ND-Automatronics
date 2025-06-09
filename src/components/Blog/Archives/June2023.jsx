@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Archives.css";
 import { Link } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet';
 const posts = [
   {
     id: 1,
@@ -22,6 +22,10 @@ const posts = [
 const June2023 = () => {
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>June 2023 Archives | Blog</title>
+</Helmet>
+
     <div className="main-container">
       <h1 className="page-heading">June 2023</h1>
       <div className="blog-layout">
