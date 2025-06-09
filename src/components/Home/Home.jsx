@@ -14,31 +14,35 @@ import FAQ from "./FAQ.jsx";
 const Home = () => {
   const [openIndex, setOpenIndex] = useState(0);
 
-  const faqs = [
-    {
-      question: "Introductory Seminar",
-      answer: [
-        "Introduction to 3D Printing",
-        "Types of 3D Printing",
-        "Process Flow in 3D Printing",
-        "Components of FDM Printer",
-        "Industrial Applications",
-        "Advancements & Future of 3D Printing",
-      ],
-    },
-    {
-      question: "Hands-on Workshop",
-      answer: "Practical sessions with real 3D printing equipment.",
-    },
-    {
-      question: "Personal Training (1 on 1 Training)",
-      answer: "Customized training sessions tailored to individual needs.",
-    },
-    {
-      question: "3D Printing Consultation & Guidance",
-      answer: "Expert advice on implementing 3D printing in your projects.",
-    },
-  ];
+ const faqs = [
+  {
+    question: "Introductory Seminar",
+    answer: [
+      "Introduction to 3D Printing",
+      "Types of 3D Printing",
+      "Process Flow in 3D Printing",
+      "Components of FDM Printer",
+      "Industrial Applications",
+      "Advancements & Future of 3D Printing",
+    ],
+  },
+  {
+    question: "Hands-on Workshop",
+    answer:
+      "This intensive workshop offers participants the opportunity to operate real 3D printers and explore slicing software, design tools, and calibration methods. Attendees will gain hands-on experience with FDM 3D printers, learn to troubleshoot common issues, and create their own 3D printed parts. Ideal for those who want practical exposure and to understand the end-to-end process from design to production.",
+  },
+  {
+    question: "Personal Training (1 on 1 Training)",
+    answer:
+      "Our personalized 1-on-1 training sessions are designed to adapt to the learner’s pace and skill level. Whether you're a beginner or looking to advance your skills, we customize each session to suit your goals — including CAD designing, printer assembly, maintenance, and project-specific guidance. This format ensures individual attention, in-depth understanding, and faster progress.",
+  },
+  {
+    question: "3D Printing Consultation & Guidance",
+    answer:
+      "Our expert consultants provide strategic guidance on integrating 3D printing technology into your academic, industrial, or personal projects. From selecting the right printer and materials to optimizing print quality and reducing costs, we help you every step of the way. Whether you’re prototyping a product or setting up a 3D printing lab, our insights ensure successful implementation.",
+  },
+];
+
 
   const toggleSection = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -133,12 +137,12 @@ const bottomRowTestimonials = testimonials.slice(halfLength);
           <div className="underline"></div>
           <span>ND Automatronics?</span>
         </h2>
-        <p className="description">
+        <p className="descriptions">
           Transform the landscape of manufacturing with ND Automatronics, where we specialize
           in pioneering large-scale 3D printing solutions tailored for industrial applications.
           Our innovative technology empowers businesses to turn complex concepts into reality.
         </p>
-        <p className="description">
+        <p className="descriptions">
           Transform the landscape of manufacturing with ND Automatronics, where we specialize
           in pioneering large-scale 3D printing solutions tailored for industrial applications.
           Our innovative technology empowers businesses to turn complex concepts into reality.

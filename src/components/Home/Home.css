@@ -169,7 +169,8 @@
   .faq-answer {
     margin-top: 5px;
     color: #555;
-    text-align: left;
+    text-align: justify;
+    padding-right:30px;
   }
   
   .faq-answer ul {
@@ -202,9 +203,11 @@
     position: relative;
   }
  
-  .description {
+  .descriptions{
     margin-top: 1rem;
     color: gray;
+    text-align:justify;
+    margin-right: 20px;
   }
   .image-section {
     position: relative;  /* Ensures absolute elements stay within this */
