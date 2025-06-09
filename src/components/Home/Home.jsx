@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -70,6 +71,10 @@ const bottomRowTestimonials = testimonials.slice(halfLength);
 
   return (
     <>
+     <Helmet>
+        <title>ND Automatronics | 3D Printing Industry</title>
+        <meta name="description" content="ND Automatronics: Bringing Your Ideas to Life with High-Precision 3D Printing Solutions." />
+      </Helmet>
       <Navigation />
 
       <section className="hero">

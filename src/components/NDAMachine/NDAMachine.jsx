@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './NDAMachine.css';
-
+import { Helmet } from "react-helmet";
 const splineEmbeds = {
   "FDM PRINTER": "https://my.spline.design/fdm-YVMF6S1avc90CZJRqbtPelmh/",
   "SLA PRINTER": "https://my.spline.design/sla-mvrFnGdFrH8vYyazCB6OTNTS/",
@@ -24,6 +24,13 @@ function App() {
 
   return (
     <div className="app-container">
+      <Helmet>
+        <title>ND Automatronics | Machineries</title>
+        <meta
+          name="description"
+          content="Explore ND Automatronics' collection of advanced 3D printing and fabrication machines including FDM, SLA, CNC, and more."
+        />
+      </Helmet>
       <p className="top-caption">
         3D printing turns imagination into reality, one layer at a time.
       </p>

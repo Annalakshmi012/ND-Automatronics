@@ -3,12 +3,19 @@ import "./Training.css";
 import trainerImage from "../../assets/27.png"; 
 import workshopImg from "../../assets/28.png";
 import WorkshopCard from "./WorkshopCard"; // import the new component
-
+import { Helmet } from "react-helmet";
 const Training = () => {
  
 
   return (
     <div className="training-main-container">
+      <Helmet>
+      <title>3D Printing Training & Workshops | ND Automatronics</title>
+      <meta
+        name="description"
+        content="Join our 3D Printing Training program with hands-on workshops, seminars, and personal training. Ideal for students, professionals, and industries. Learn FDM, design, and more!"
+      />
+    </Helmet>
       {/* Welcome Section */}
       <section className="training-welcome-section">
         <div className="training-welcome-text">

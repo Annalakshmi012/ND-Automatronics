@@ -4,12 +4,21 @@ import bgImage from '../../assets/23.jpg';
 import arrowIcon from '../../assets/24.png';
 import promoImage from '../../assets/25.jpg';
 import { Link } from 'react-router-dom';
-
+import { Helmet } from "react-helmet";
 const Printer = () => {
   return (
     <>
+    <Helmet>
+  <title>3D Printer Service | ND Automatronics</title>
+  <meta
+    name="description"
+    content="Explore ND Automatronics' 3D printer services including SLA, FDM printing, and nationwide repair & maintenance with expert consultation."
+  />
+</Helmet>
+
       {/* Hero Section */}
       <div className="printer-hero" style={{ backgroundImage: `url(${bgImage})` }}>
+
         <div className="printer-overlay" />
         <h1 className="printer-title">3D Printer<br />Service</h1>
       </div>

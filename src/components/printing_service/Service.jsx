@@ -11,7 +11,7 @@ import quoteImg from "../../assets/19.png";
 import printImg from "../../assets/20.png";
 import shipImg from "../../assets/21.png";
 import receiveImg from "../../assets/22.png";
-
+import { Helmet } from "react-helmet";
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import SpinningPrinterModel from './SpinningPrinterModel';
@@ -19,6 +19,14 @@ import SpinningPrinterModel from './SpinningPrinterModel';
 const Service = () => {
   return (
     <>
+    <Helmet>
+  <title>3D Printing Services | ND Automatronics</title>
+  <meta
+    name="description"
+    content="Professional 3D printing services using FDM and SLA technologies by ND Automatronics. Upload your design, choose material, and receive quality prints with nationwide delivery."
+  />
+</Helmet>
+
       <section className="service-hero-section">
   <div className="service-hero-image" style={{ width: "600px", height: "400px" }}>
 <div style={{ background: '#FFFAE9', padding: '20px' }}>
