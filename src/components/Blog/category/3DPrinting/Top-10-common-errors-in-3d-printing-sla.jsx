@@ -20,7 +20,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const TopSLA = () => {
  const blogUrl = encodeURIComponent(
@@ -40,6 +40,20 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+        <title>{blogTitle}</title>
+        <meta
+          name="description"
+          content="Discover the top 10 common errors in 3D Printing (SLA) and learn how to avoid them to get flawless prints every time."
+        />
+        <meta property="og:title" content={blogTitle} />
+        <meta property="og:url" content="https://nda3d.in/blog/Top-10-common-errors-in-3d-printing-sla" />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Discover the top 10 common errors in 3D Printing (SLA) and learn how to avoid them to get flawless prints every time."
+        />
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
 

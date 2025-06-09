@@ -9,8 +9,7 @@ import blog7 from "../../../../assets/120.webp";
 import blog8 from "../../../../assets/121.webp";
 import blog9 from "../../../../assets/122.webp";
 import blog10 from "../../../../assets/123.webp";
-
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/91.webp";
 import related2 from "../../../../assets/102.webp";
 import related3 from "../../../../assets/103.webp";
@@ -41,6 +40,10 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+       <Helmet>
+        <title>Key Steps in FDM Printing: A Quick Guide</title>
+        <meta name="description" content="Explore the essential steps in FDM 3D printing from idea to post-processing." />
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
      <h1 className="custom-heading">Key Steps in FDM Printing: A Quick Guide</h1>

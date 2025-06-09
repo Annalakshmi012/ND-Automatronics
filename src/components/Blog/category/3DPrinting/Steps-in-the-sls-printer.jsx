@@ -10,7 +10,7 @@ import blog7 from "../../../../assets/97.webp";
 import blog8 from "../../../../assets/98.webp";
 import blog9 from "../../../../assets/99.webp";
 import blog10 from "../../../../assets/100.webp";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/101.webp";
 import related2 from "../../../../assets/102.webp";
 import related3 from "../../../../assets/103.webp";
@@ -40,6 +40,14 @@ const StepsSLS = () => {
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Key Steps for Efficient SLS Printer Workflow Explained | NDA3D</title>
+  <meta name="description" content="Learn the critical steps in SLS 3D printing workflow for high-quality results, from file prep to post-processing." />
+  <meta property="og:title" content="Key Steps for Efficient SLS Printer Workflow Explained" />
+  <meta property="og:url" content="https://nda3d.in/blog/3d-printing-market" />
+  <meta property="og:type" content="article" />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
         <h1 className="custom-heading">

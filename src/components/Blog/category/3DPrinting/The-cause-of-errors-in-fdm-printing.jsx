@@ -6,9 +6,7 @@ import blog3 from "../../../../assets/178.webp";
 import blog4 from "../../../../assets/179.webp";
 import blog5 from "../../../../assets/180.webp";
 import blog6 from "../../../../assets/181.webp";
-
-
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/81.webp";
 import related2 from "../../../../assets/78.webp";
 import related3 from "../../../../assets/102.webp";
@@ -39,6 +37,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>The Cause of Errors in FDM Printing: Troubleshooting Tips</title>
+  <meta name="description" content="Learn about common causes of errors in FDM 3D printing and how to troubleshoot them." />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
       <h1 className="custom-heading">The Cause of Errors in FDM Printing: Troubleshooting Tips</h1>

@@ -18,6 +18,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
+import { Helmet } from 'react-helmet';
 
 
 const TypesResins = () => {
@@ -38,6 +39,15 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+       <Helmet>
+        <title>Types of 3D Printing Resins: A Comprehensive Overview | NDA3D</title>
+        <meta
+          name="description"
+          content="Explore the various types of 3D printing resins, their properties, and best use cases to choose the right resin for your projects."
+        />
+        <meta name="robots" content="index, follow" />
+        {/* Add more meta tags if needed */}
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
       <h1 className="custom-heading">Types of 3D Printing Resins: A Comprehensive Overview</h1>

@@ -18,7 +18,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const Versatile = () => {
  const blogUrl = encodeURIComponent(
@@ -38,6 +38,15 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Versatile Ways to Use 3D Printing | NDA 3D</title>
+  <meta
+    name="description"
+    content="Explore versatile applications of 3D printing in prototyping, medical solutions, architecture, personalized products, education, repairs, and art."
+  />
+  <link rel="canonical" href="https://nda3d.in/blog/Versatile-ways-to-use-3d-printing" />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">Versatile Ways to Use 3D Printing</h1>

@@ -10,9 +10,7 @@ import blog7 from "../../../../assets/130.webp";
 import blog8 from "../../../../assets/131.webp";
 import blog9 from "../../../../assets/132.webp";
 import blog10 from "../../../../assets/133.webp";
-
-
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/103.webp";
 import related2 from "../../../../assets/134.webp";
 import related3 from "../../../../assets/77.webp";
@@ -43,6 +41,14 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Pros and Cons of SLA Printers: A Comprehensive Guide | NDA 3D</title>
+  <meta name="description" content="Explore the advantages and disadvantages of SLA 3D printers, including print quality, speed, cost, and environmental impact." />
+  <meta property="og:title" content="Pros and Cons of SLA Printers: A Comprehensive Guide" />
+  <meta property="og:url" content="https://nda3d.in/blog/Pros-and-cons-of-sla-printers" />
+  {/* Add more meta tags as needed */}
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">Pros and Cons of SLA Printers: A Comprehensive Guide</h1>

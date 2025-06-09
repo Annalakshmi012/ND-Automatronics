@@ -17,7 +17,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const TypesTechnologies = () => {
  const blogUrl = encodeURIComponent(
@@ -37,6 +37,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+        <title>{decodeURIComponent(blogTitle)}</title>
+        <meta name="description" content="Learn about various 3D printing technologies and services available." />
+        <link rel="canonical" href={decodeURIComponent(blogUrl)} />
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
      <h1 className="custom-heading">

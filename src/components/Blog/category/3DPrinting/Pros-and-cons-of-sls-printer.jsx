@@ -1,5 +1,6 @@
 import React from "react";
 import "../../BlogPost.css";
+import { Helmet } from 'react-helmet';
 import blog1 from "../../../../assets/135.webp";
 import blog2 from "../../../../assets/136.webp";
 import blog3 from "../../../../assets/137.webp";
@@ -38,6 +39,12 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Understanding the Pros and Cons of SLS Printers | NDA 3D</title>
+  <meta name="description" content="Explore the advantages and disadvantages of Selective Laser Sintering (SLS) 3D printers in manufacturing and design." />
+  <link rel="canonical" href="https://nda3d.in/blog/Pros-and-cons-of-sls-printer" />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">Understanding the Pros and Cons of SLS Printers</h1>

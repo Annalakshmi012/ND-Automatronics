@@ -14,7 +14,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const ProsAndConsFDM = () => {
  const blogUrl = encodeURIComponent(
@@ -34,6 +34,12 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Understanding the Pros and Cons of FDM Printers | NDA3D</title>
+  <meta name="description" content="Explore the advantages and disadvantages of Fused Deposition Modeling (FDM) 3D printers and learn how they impact manufacturing and prototyping." />
+  <link rel="canonical" href="https://nda3d.in/blog/Pros-and-cons-of-fdm-printer" />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <h1 className="custom-heading">Understanding the Pros and Cons of FDM Printers</h1>

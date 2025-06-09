@@ -13,7 +13,7 @@ import blog9 from "../../../../assets/172.webp";
 import blog10 from "../../../../assets/173.webp";
 import blog11 from "../../../../assets/174.webp";
 import blog12 from "../../../../assets/175.webp";
-
+import { Helmet } from 'react-helmet';
 
 import related1 from "../../../../assets/77.webp";
 import related2 from "../../../../assets/52.jpg";
@@ -45,6 +45,17 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Market Growth of 3D Printing: Insights and Future Trends | NDA 3D</title>
+  <meta
+    name="description"
+    content="Explore the market growth, trends, and future projections of 3D printing technology reshaping multiple industries."
+  />
+  <meta property="og:title" content="Market Growth of 3D Printing" />
+  <meta property="og:url" content="https://nda3d.in/blog/Market-growth-of-3d-printing" />
+  {/* Add more Open Graph and Twitter Card tags as needed */}
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
     <div className="blog-introduction">

@@ -4,7 +4,7 @@ import "../../BlogPost.css";
 import blog1 from "../../../../assets/151.webp";
 import blog2 from "../../../../assets/152.webp";
 import blog3 from "../../../../assets/153.webp";
-
+import { Helmet } from 'react-helmet';
 import related1 from "../../../../assets/77.webp";
 import related2 from "../../../../assets/52.jpg";
 import related3 from "../../../../assets/80.webp";
@@ -35,6 +35,10 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+       <Helmet>
+        <title>Market Growth of 3D Printing: Insights and Future Trends</title>
+        <meta name="description" content="Explore the growth and future trends in the 3D printing market across industries including healthcare, aerospace, and more." />
+      </Helmet>
     <div className="blog-layout">
       <div className="left-section">
     <div className="blog-introduction">

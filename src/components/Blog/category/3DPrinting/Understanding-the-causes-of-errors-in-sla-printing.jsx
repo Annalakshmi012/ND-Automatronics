@@ -16,7 +16,7 @@ import {
   FaFacebook, FaEnvelope, FaLinkedin, FaTelegram, 
   FaWhatsapp, FaPrint, FaReddit, FaPinterest 
 } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet';
 
 const UnderstandingSLA = () => {
  const blogUrl = encodeURIComponent(
@@ -36,6 +36,11 @@ const blogTitle = encodeURIComponent(
 
   return (
      <div className="blog-page-wrapper">
+      <Helmet>
+  <title>Understanding the Cause of Errors in SLA Printing | ND Automatronics</title>
+  <meta name="description" content="Explore the common causes of SLA printing errors, troubleshooting tips, and resin care to improve your 3D printing quality." />
+</Helmet>
+
     <div className="blog-layout">
       <div className="left-section">
       <h1 className="custom-heading">Understanding the Cause of Errors in SLA Printing</h1>
