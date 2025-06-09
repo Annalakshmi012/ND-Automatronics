@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import logoImage from "../../assets/0.png";
 
@@ -25,8 +25,27 @@ const Navigation = () => {
 
         {/* Desktop Navigation */}
         <ul className="nav-links">
-          <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
-          <li className="nav-item"><Link to="/about" className="nav-link">About</Link></li>
+          <li className="nav-item">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+              end
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              About
+            </NavLink>
+          </li>
           <li
             className="nav-item dropdown"
             onMouseEnter={() => setIsDropdownOpen(true)}
@@ -36,36 +55,148 @@ const Navigation = () => {
               Services <FaChevronDown className="dropdown-icon" />
             </span>
             <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
-              <li><Link to="/services/printing" className="nav-link">3D Printing Service</Link></li>
-              <li><Link to="/services/printer" className="nav-link">3D Printer Service</Link></li>
-              <li><Link to="/services/training" className="nav-link">3D Printing Training</Link></li>
+              <li>
+                <NavLink
+                  to="/services/printing"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  3D Printing Service
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services/printer"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  3D Printer Service
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services/training"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  3D Printing Training
+                </NavLink>
+              </li>
             </ul>
           </li>
-          <li className="nav-item"><Link to="/NDAMachines" className="nav-link">NDA Machines</Link></li>
-          <li className="nav-item"><Link to="/career" className="nav-link">Career</Link></li>
-          <li className="nav-item"><Link to="/blog" className="nav-link">Blog</Link></li>
+          <li className="nav-item">
+            <NavLink
+              to="/NDAMachines"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              NDA Machines
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/career"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Career
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "nav-link active" : "nav-link"
+              }
+            >
+              Blog
+            </NavLink>
+          </li>
         </ul>
-          <Link to="/about#contact" className="contact-button desktop-only">Contact
-  <div className="border-line top"></div>
-  <div className="border-line bottom"></div>
-  <div className="border-line left"></div>
-  <div className="border-line right"></div></Link>
-        
+
+        <NavLink
+          to="/about#contact"
+          className="contact-button desktop-only"
+        >
+          Contact
+          <div className="border-line top"></div>
+          <div className="border-line bottom"></div>
+          <div className="border-line left"></div>
+          <div className="border-line right"></div>
+        </NavLink>
       </div>
 
       {/* Sidebar Menu (Mobile) */}
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-        <Link to="/" onClick={toggleSidebar}>Home</Link>
-        <Link to="/about" onClick={toggleSidebar}>About</Link>
-        <Link to="/services/printing" onClick={toggleSidebar}>3D Printing Service</Link>
-        <Link to="/services/printer" onClick={toggleSidebar}>3D Printer Service</Link>
-        <Link to="/services/training" onClick={toggleSidebar}>3D Printing Training</Link>
-        <Link to="/NDAMachines" onClick={toggleSidebar}>NDA Machines</Link>
-        <Link to="/career" onClick={toggleSidebar}>Career</Link>
-        <Link to="/blog" onClick={toggleSidebar}>Blog</Link>
-        <Link to="/about#contact" className="mobile-only" onClick={toggleSidebar}>Contact</Link>
-        
-  
+        <NavLink
+          to="/"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+          end
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/services/printing"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          3D Printing Service
+        </NavLink>
+        <NavLink
+          to="/services/printer"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          3D Printer Service
+        </NavLink>
+        <NavLink
+          to="/services/training"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          3D Printing Training
+        </NavLink>
+        <NavLink
+          to="/NDAMachines"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          NDA Machines
+        </NavLink>
+        <NavLink
+          to="/career"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Career
+        </NavLink>
+        <NavLink
+          to="/blog"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Blog
+        </NavLink>
+        <NavLink
+          to="/about#contact"
+          onClick={toggleSidebar}
+          className={({ isActive }) => (isActive ? "active mobile-only" : "mobile-only")}
+        >
+          Contact
+        </NavLink>
       </div>
     </nav>
   );

@@ -326,3 +326,21 @@
     display: block; /* Show contact in sidebar */
   }
 }
+/* Active link style for desktop nav */
+.nav-link.active {
+  color: #00BCD4; /* Example active color */
+  font-weight: 700;
+  /* You can add other styles like underline, background, etc */
+}
+
+/* Active link style for sidebar */
+.sidebar .active {
+  color: #00BCD4;
+  font-weight: 700;
+}
+
+/* Optional: to keep consistency for mobile-only Contact link */
+.mobile-only.active {
+  color: #00BCD4;
+  font-weight: 700;
+}
