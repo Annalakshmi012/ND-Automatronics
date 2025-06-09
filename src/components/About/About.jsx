@@ -4,7 +4,7 @@ import Form from '../Form/Form';
 
 
 // Section 1 Assets
-import mainImage from '../../assets/6.jpeg';
+import mainImage from '../../assets/6.JPEG';
 import philosophyImage from '../../assets/0.png';
 import { Helmet } from "react-helmet";
 
