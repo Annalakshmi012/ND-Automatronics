@@ -6,6 +6,7 @@ import Form from '../Form/Form';
 // Section 1 Assets
 import mainImage from '../../assets/6.jpeg';
 import philosophyImage from '../../assets/0.png';
+import { Helmet } from "react-helmet";
 
 // Section 2 Assets (Meet the Principal)
 import jayBritto from '../../assets/231.jpg';
@@ -14,6 +15,13 @@ import backgroundImage from '../../assets/banner-2.png';
 const AboutPage = () => {
   return (
     <div>
+        <Helmet>
+    <title>About Us | ND Automatronics</title>
+    <meta
+      name="description"
+      content="Learn about ND Automatronics, pioneers in India's 3D printing industry specializing in large-scale customizable printers and innovative R&D."
+    />
+  </Helmet>
       {/* SECTION 1: About Us */}
       <div className="about-grid">
         <div className="about-text">

@@ -11,6 +11,7 @@ import certificateIcon from "../../assets/12.png";
 import growthIcon from "../../assets/13.png";
 import handsOnIcon from "../../assets/14.png";
 import Navigation from "../Navigation/Navigation.jsx";
+import { Helmet } from "react-helmet";
 
 // Reusable Card Component
 const CareerCard = ({ icon, title, description }) => (
@@ -82,6 +83,15 @@ const steps = [
 const Career = () => {
   return (
     <>
+    
+  <Helmet>
+    <title>Careers & Internships | ND Automatronics</title>
+    <meta
+      name="description"
+      content="Explore exciting career and internship opportunities at ND Automatronics. Gain hands-on experience in 3D printing, web development, marketing, and more!"
+    />
+  </Helmet>
+
       <Navigation />
       <div className="unique-career-container">
         <div className="unique-career-text">
