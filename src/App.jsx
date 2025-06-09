@@ -1,6 +1,7 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Routes, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Home from './components/Home/Home';
 import Navigation from './components/Navigation/Navigation';
 import Career from './components/Career/Career';
@@ -54,6 +55,37 @@ import './App.css';
 function App() {
   return (
     <>
+    <Helmet>
+        {/* Meta Title */}
+        <title>ND Automatronics - India's Best 3D Printing Services, Products, Training & Professional Internships</title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="ND Automatronics is India's leading 3D printing company offering cutting-edge 3D printing services, innovative 3D products, expert training programs, and professional internships. Join us to gain hands-on experience in the fastest growing 3D printing industry and shape your career with top industry professionals."
+        />
+
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="3D printing India, 3D printing services, 3D printed products, 3D printing training, 3D printing internship, professional internships, 3D modeling, additive manufacturing, ND Automatronics, 3D design, 3D printing career, 3D prototyping"
+        />
+
+        {/* Robots meta to allow indexing */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Author meta */}
+        <meta name="author" content="ND Automatronics" />
+
+        {/* 
+          Why focus on these meta tags & keywords?
+          - 3D printing services: Target users looking for companies offering 3D printing jobs or product creation.
+          - 3D printed products: Attract customers and enthusiasts searching for innovative 3D products.
+          - Training & internships: Reach students and professionals seeking hands-on learning and career growth opportunities.
+          - India-focused: Local SEO for geographic relevance to Indian market.
+          - Professional internships: Draw serious candidates who want valuable real-world experience.
+        */}
+      </Helmet>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
