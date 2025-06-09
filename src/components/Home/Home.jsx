@@ -142,16 +142,18 @@ const bottomRowTestimonials = testimonials.slice(halfLength);
           <div className="underline"></div>
           <span>ND Automatronics?</span>
         </h2>
-        <p className="descriptions">
-          Transform the landscape of manufacturing with ND Automatronics, where we specialize
-          in pioneering large-scale 3D printing solutions tailored for industrial applications.
-          Our innovative technology empowers businesses to turn complex concepts into reality.
-        </p>
-        <p className="descriptions">
-          Transform the landscape of manufacturing with ND Automatronics, where we specialize
-          in pioneering large-scale 3D printing solutions tailored for industrial applications.
-          Our innovative technology empowers businesses to turn complex concepts into reality.
-        </p>
+       <p className="descriptions">
+  ND Automatronics is revolutionizing the future of manufacturing through cutting-edge 3D printing technology.
+   We deliver customized, scalable solutions designed to optimize production efficiency and bring industrial
+    designs to life with unmatched precision.
+</p>
+
+       <p className="descriptions">
+  From prototypes to end-use parts, ND Automatronics empowers industries with next-gen 3D printing 
+  capabilities. Our commitment to innovation and quality helps businesses reduce lead times, minimize costs,
+   and stay ahead in a competitive landscape.
+</p>
+
       </div>
       <div className="image-section">
       <img src={image6} alt="Spark" className="sprak"/>
