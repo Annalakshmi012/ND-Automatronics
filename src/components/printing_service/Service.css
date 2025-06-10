@@ -315,54 +315,42 @@
   max-width: 160px;
 }
 /* ... Your existing CSS stays as is ... */
-
-/* Devices between 500px and 700px */
-@media (max-width: 700px) and (min-width: 501px) {
+@media (max-width: 500px) {
   .service-hero-section {
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
-    margin-top:4rem;
+    margin-top: 2rem;
   }
 
   .service-hero-section h1 {
-     margin-top:2rem;
-    font-size: 2rem;
-   
-    line-height: 1.3;
+    font-size: 1.8rem;
+    margin-top: 1rem;
   }
 
   .service-hero-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding: 0 24px;
-    text-align: justify;
+    font-size: 1rem;
+    padding: 0 16px;
+    line-height: 1.5;
   }
 
   .service-hero-image {
     width: 100%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 1.5rem;
   }
 
   .service-button-group {
-    flex-direction: row;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
+    align-items: center;
   }
 
   .service-primary-btn,
   .service-outline-btn {
-    padding: 10px 18px;
+    width: 80%;
     font-size: 1rem;
-    min-width: 130px;
-  }
-
-  .service-tech-section,
-  .service-printing-section {
-    padding: 30px 20px;
-    margin: 40px 20px;
-    border-radius: 12px;
   }
 
   .service-tech-content,
@@ -380,47 +368,50 @@
   .service-tech-text,
   .service-printing-content {
     width: 100%;
-    margin-top: 20px;
-    padding: 0 16px;
+    padding: 0 12px;
+    text-align: justify;
   }
 
   .service-tech-text h3,
   .service-printing-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .service-tech-text p,
   .service-printing-content p {
     font-size: 1rem;
-    line-height: 1.5;
   }
 
   .service-process-section {
-    padding: 40px 20px;
+    padding: 30px 16px;
   }
 
   .service-process-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
   }
 
   .service-process-steps {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr; /* single column for mobile */
+    gap: 20px;
   }
 
   .service-step img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .service-step p {
     font-size: 14px;
-    max-width: 200px;
-    padding: 0 10px;
   }
 
   .service-heading h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .service-tech-section,
+  .service-printing-section {
+    padding: 24px 12px;
+    margin: 40px 12px;
   }
 }
