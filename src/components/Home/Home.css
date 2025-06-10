@@ -75,6 +75,7 @@
   
   .btn-primary:hover {
     background-color: #0097a7;
+      color: white;
   }
   
   .btn-secondary:hover {
@@ -83,7 +84,7 @@
   }
   .btn-primary,
 .btn-secondary {
-  color: black; /* Your desired color */
+
   text-decoration: none;
 }
 
