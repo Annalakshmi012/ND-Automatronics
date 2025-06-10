@@ -318,12 +318,27 @@
   * {
     box-sizing: border-box;
   }
+  .section-container, .hero-section, .how-it-works-section, .services-section {
+    padding: 15px !important;  /* add padding inside sections */
+  }
+
+  h1, h2, h3, p {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  button {
+    margin: 10px 0; /* spacing around buttons */
+  }
+
 
   html, body {
     max-width: 100%;
     overflow-x: hidden;
-    padding: 0;
+  
     margin: 0;
+     padding: 10px;
+  box-sizing: border-box;
   }
 
   .service-hero-section {
@@ -472,5 +487,12 @@
     font-size: 1.8rem;
     text-align: center;
     padding: 0 10px;
+  }
+   img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* center images */
+    padding: 10px 0;
   }
 }
