@@ -387,10 +387,12 @@ body {
   }
 
   .faq-section {
-    max-width: 100%;
-    padding: 0 10px;
-   
-  }
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 
   .nd-container {
     flex-direction: column;
@@ -404,12 +406,11 @@ body {
     text-align: center;
   }
 
-  .image-section {
-    width: 100%;
-    margin: 20px 0 0 0;
-    justify-content: center;
-    margin-right: 0;
-  }
+ /* Hide image section in ND container on mobile */
+.image-section {
+  display: none;
+}
+
 
   .image {
     width: 200px;
