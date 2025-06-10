@@ -316,53 +316,53 @@
 }
 /* ... Your existing CSS stays as is ... */
 
-/* Responsive Design */
-@media (max-width: 768px) {
-
+/* Devices between 500px and 700px */
+@media (max-width: 700px) and (min-width: 501px) {
   .service-hero-section {
     flex-direction: column;
-    align-items: center;
     padding: 20px;
-    text-align: justify;
-  }
-  .service-hero-section h1{
     text-align: center;
-  }
-  .service-hero-image {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .service-content {
-    margin-top: 20px;
+    margin-top:4rem;
   }
 
   .service-hero-section h1 {
+     margin-top:2rem;
     font-size: 2rem;
+   
+    line-height: 1.3;
   }
 
   .service-hero-section p {
-    font-size: 1rem;
-    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 24px;
+    text-align: justify;
+  }
+
+  .service-hero-image {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
   }
 
   .service-button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
   }
 
-  .service-button-group a {
-    margin: 10px 0;
-    width: 80%;
-    text-align: center;
+  .service-primary-btn,
+  .service-outline-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    min-width: 130px;
   }
 
   .service-tech-section,
   .service-printing-section {
-    padding: 20px;
+    padding: 30px 20px;
     margin: 40px 20px;
+    border-radius: 12px;
   }
 
   .service-tech-content,
@@ -374,21 +374,25 @@
   .service-tech-image,
   .service-printing-image {
     width: 100%;
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .service-tech-text,
   .service-printing-content {
     width: 100%;
-    padding: 0;
     margin-top: 20px;
-
-      margin-bottom: 20px;
+    padding: 0 16px;
   }
 
   .service-tech-text h3,
   .service-printing-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .service-tech-text p,
+  .service-printing-content p {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 
   .service-process-section {
@@ -397,11 +401,12 @@
 
   .service-process-section h2 {
     font-size: 2rem;
+    margin-bottom: 30px;
   }
 
   .service-process-steps {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 24px;
   }
 
   .service-step img {
@@ -411,154 +416,11 @@
 
   .service-step p {
     font-size: 14px;
-  }
-
-  .service-heading h2 {
-    font-size: 2rem;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .service-process-steps {
-    grid-template-columns: 1fr;
-  }
-}
-
-.service-primary-btn,
-.service-outline-btn {
-  padding: 10px 16px;      /* smaller padding */
-  font-size: 1rem;         /* slightly smaller text */
-  border-radius: 6px;      /* consistent corner radius */
-  width: auto;             /* don't stretch too wide */
-  min-width: 140px;        /* ensures button is not too small */
-  text-align: center;      /* centers text inside */
-  display: inline-block;
-  box-sizing: border-box;
-}
-
-/* Mobile adjustment */
-@media (max-width: 600px) {
-  .service-hero-section {
-    flex-direction: column;
-    padding: 16px;
-    text-align: center;
-  }
-
-  .service-hero-section h1 {
-    font-size: 1.8rem;
-    margin-top: 20px;
-  }
-.service-content p {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-top: 20px;
-}
-
-
-  .service-hero-image {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .service-button-group {
-  display: flex;
-  flex-direction: row;    /* horizontal layout */
-  justify-content: center; /* center buttons horizontally */
-  align-items: center;    /* align buttons vertically center */
-  gap: 10px;              /* space between buttons */
-  flex-wrap: nowrap;      /* no wrapping */
-}
-
-.service-primary-btn,
-.service-outline-btn {
-  min-width: 120px;       /* fixed minimum width */
-  padding: 8px 14px;
-  font-size: 0.95rem;
-  margin: 0;              /* no vertical margin */
-  width: auto;            /* auto width to fit content */
-  flex: none;             /* do not stretch or shrink */
-}
-
-
-
-  .service-tech-section,
-  .service-printing-section {
-    padding: 20px;
-    margin: 20px 10px;
-    border-radius: 10px;
-  }
-
-  .service-tech-text h3,
-  .service-printing-content h3 {
-    font-size: 1.3rem;
-  }
-
-  .service-process-section h2 {
-    font-size: 1.8rem;
-  }
-
-  .service-process-steps {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .service-step img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .service-step p {
-    font-size: 14px;
+    max-width: 200px;
     padding: 0 10px;
   }
 
   .service-heading h2 {
-    font-size: 1.8rem;
-  }
-  .service-hero-section h1,
-  .service-tech-text h3,
-  .service-printing-content h3,
-  .service-heading h2,
-  .service-process-section h2 {
-    font-size: 1.8rem;  /* reduce heading sizes */
-    line-height: 1.3;
-    margin-bottom: 1rem;
-  }
-
-  .service-hero-section p,
-  .service-tech-text p,
-  .service-printing-content p,
-  .service-content p,
-  .service-step p {
-    font-size: 1rem; /* smaller paragraph text */
-    line-height: 1.5;
-    padding: 0 30px; /* add horizontal padding to avoid edge crowding */
-    margin-bottom: 1rem;
-  }
-}
-
-/* For mobile phones (up to 480px) */
-@media (max-width: 480px) {
-  .service-hero-section h1,
-  .service-tech-text h3,
-  .service-printing-content h3,
-  .service-heading h2,
-  .service-process-section h2 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-  }
-
-  .service-hero-section p,
-  .service-tech-text p,
-  .service-printing-content p,
-  .service-content p,
-  .service-step p {
-    font-size: 0.9rem;
-    padding: 0 12px;
-    margin-bottom: 0.8rem;
+    font-size: 2rem;
   }
 }

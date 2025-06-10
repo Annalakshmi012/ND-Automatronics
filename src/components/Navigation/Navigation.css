@@ -22,10 +22,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;         /* ✅ Prevent wrapping */
+  overflow: hidden;          /* Optional: hide overflow */
   max-width: 1400px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
+  gap: 16px;
 }
+
 
 .logo {
   display: flex;
@@ -40,11 +44,14 @@
 }
 
 
-/* ✅ Bigger Desktop Menu */
 .nav-links {
   display: flex;
-  gap: 24px; /* Increased gap */
+  flex: 1 1 auto;           
+  flex-wrap: nowrap;
+  gap: 20px;
   list-style: none;
+          
+  white-space: nowrap;
 }
 
 .nav-item {
@@ -170,13 +177,15 @@
   position: relative;
   z-index: 1;
   display: inline-block;
-}
-
-.contact-button {
+  flex: 0 0 auto; /* ✅ Don’t shrink */
+  white-space: nowrap;
   color: inherit;            /* keep original color */
   text-decoration: none;     /* remove underline */
-  outline: none;             /* remove focus outline */
+  outline: none;   
+  margin-right:4rem;
 }
+
+
 
 .contact-button:visited {
   color: inherit;            /* prevent color change on visited */

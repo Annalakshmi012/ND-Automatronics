@@ -341,8 +341,12 @@ body {
   }
 
   .hero-left h1 {
-    font-size: 2.5rem;
-  }
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2C3E50;
+  margin-top: 40px; /* ✅ adds spacing at the top */
+}
+
 
   .hero-left p {
     font-size: 1.2rem;
@@ -422,7 +426,7 @@ body {
 
   .image-section .sprak {
     margin: 0;
-    top: -32rem;
+    top: -24rem;
     left: 30rem;
   }
 
